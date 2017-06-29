@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        <h1>Mi pagina web</h1>
+        {% block body %}
+            
+        {% endblock %}
+        <h5> pie de pagina</h5>
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

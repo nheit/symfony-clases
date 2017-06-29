@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    Expedientes:
+    <ul>
+        {% for expediente in expedientes %}
+            <li>{{expediente.id}} - {{expediente.numero}}/{{expediente.anio}} - {{expediente.caratula}}</li>
+        {% endfor %}
+    </ul>
+{% endblock%}
